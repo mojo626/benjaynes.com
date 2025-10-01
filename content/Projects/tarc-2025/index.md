@@ -1,7 +1,7 @@
 ---
 title: "TARC 2025"
 date: 2025-09-29
-draft: true
+draft: true 
 tags: ["Rocketry"]
 ---
 
@@ -19,7 +19,11 @@ There are a few problems with this approach though. To have a very succesful roc
 
 ## Airbrakes
 
-The airbrakes are the part of the rocket that can control the amount of drag that the rocket has slowing it down. 
+The airbrakes are the part of the rocket that can control the amount of drag that the rocket has slowing it down. I went through many iterations and designs of these until landing on something I was happy with.
+
+If you want to read about the process, I detail it in this article:
+
+{{< article link="/projects/airbrakes/" showSummary=true compactSummary=true  >}}
 
 ### Iterations
 
