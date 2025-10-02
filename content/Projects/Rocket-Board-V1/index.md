@@ -10,7 +10,7 @@ tags: ["example", "tag"]
 
 This is the first iteration of the control board that I designed and assembled myself. It is meant to record data and control a model rocket during its flight to help it reach the desired altitude.
 
-{{< figure src="img/rocketboardv1.png" >}}
+{{< figure src="img/rocketboardv1.png" alt="PCB designed for recording data for and controlling model rocket" >}}
 
 ## Components
 

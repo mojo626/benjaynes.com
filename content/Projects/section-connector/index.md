@@ -40,14 +40,41 @@ Eventually, I landed on a design where you slot the two halves together and then
 {{< rawhtml >}}
 <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
 
-<style>
-    model-viewer {
-        width: 100%;
-        height: 500px;
-    }
-</style>
 
-<model-viewer alt="Rocket Section Connector" src="media/SectionConnector.gltf" poster="" shadow-intensity="10" camera-controls touch-action="pan-y"></model-viewer>
+<div style="position: relative">
+    <div id="image-div">
+        <img src="media/RocketSectionConnector.png" alt="3D printed model rocket section connector">
+    </div>
+    <div id="modelviewer-div">
+        <style>
+            model-viewer {
+                width: 100%;
+                height: 500px;
+            }
+        </style>
+
+        <model-viewer alt="Rocket Section Connector" src="media/SectionConnector.gltf" poster="" shadow-intensity="10" camera-controls touch-action="pan-y"></model-viewer>
+    </div>
+    <button onClick="toggle3D()" style="position: absolute; bottom: 0px; right: 0px; background-color: black; padding-left: 10px; padding-right: 10px; border-radius: 5px; font-size: 20px">3D</button>
+</div>
+
+
+<script>
+    document.getElementById("modelviewer-div").style.display = 'none';
+
+    var image = true;
+    function toggle3D() {
+        if (image) {
+            document.getElementById("image-div").style.display = "none";
+            document.getElementById("modelviewer-div").style.display = "block";
+            image = false;
+        } else {
+            document.getElementById("image-div").style.display = "block";
+            document.getElementById("modelviewer-div").style.display = "none";
+            image = true;
+        }
+    }
+</script>
 {{</ rawhtml >}}
 
 I'm sure there are other things that could be used other than a plastic rivet, but I had access to those and it has worked pretty well for me so far.
