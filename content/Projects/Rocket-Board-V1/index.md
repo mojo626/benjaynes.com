@@ -3,7 +3,7 @@ title: "Rocket Board V1"
 date: 2025-04-12
 draft: false
 description: "Custom PCB designed to record data and control a rocket designed for The American Rocketry Competition"
-tags: ["example", "tag"]
+tags: ["Rocketry", "PCB"]
 ---
 
 ## Introduction
